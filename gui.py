@@ -1,53 +1,48 @@
-import tkinter as tk
-import tkinter.font as tkFont
+from tkinter import *
 
-height, width = 300, 300
+root = Tk()
 
-root = tk.Tk()
+display_frame = Frame(root, bg='lightgray')
+display_frame.pack()
 
-display_font = tkFont.Font(size=20)
+clear_del_frame = Frame(root, bg='yellow')
+clear_del_frame.pack()
 
-canvas = tk.Canvas(root, height=height, width=width)
-canvas.pack()
+number_frame = Frame(root, bg='skyblue')
+number_frame.pack(side='left')
 
-frame = tk.Frame(root)
-frame.place(relwidth=.8, relheight=.8, relx=.1, rely=.1)
+operator_frame = Frame(root, bg='pink')
+operator_frame.pack(side='right')
 
-number_display = tk.Label(frame, text='Things will go here', bg='#b8b6b0', font=display_font, pady=5, padx=10)
-number_display.pack()
+zero_equal_frame = Frame(root, bg='orange')
+zero_equal_frame.pack()
+
+clearbutton = Button(clear_del_frame, text='clear', padx=5)
+clearbutton.pack(side='left')
+
+delbutton = Button(clear_del_frame, text='del', padx=10)
+delbutton.pack(side='right')
 
 
-button1 = tk.Button(frame, text='1', padx=30, pady=10)
-button1.pack(side='left', anchor='n')
 
-button2 = tk.Button(frame, text='2', padx=30, pady=10)
-button2.pack(side='left', anchor='n')
 
-button3 = tk.Button(frame, text='3', padx=30, pady=10)
-button3.pack(side='left', anchor='n')
+number1_button = Button(number_frame, text='1')
+number1_button.pack(side='left', anchor='nw')
 
-button4 = tk.Button(frame, text='4', padx=30, pady=10)
-button4.pack()
+number2_button = Button(number_frame, text='2')
+number2_button.pack(side='right', anchor='nw')
 
-button5 = tk.Button(frame, text='5', padx=30, pady=10)
-button5.pack()
+number3_button = Button(number_frame, text='3')
+number3_button.pack(side='right', anchor='ne')
 
-button6 = tk.Button(frame, text='6', padx=30, pady=10)
-button6.pack()
+# number4_button = Button(number_frame, text='4')
+# number4_button.pack(side='left', anchor='n')
 
-button7 = tk.Button(frame, text='7', padx=30, pady=10)
-button7.pack()
 
-button8 = tk.Button(frame, text='8', padx=30, pady=10)
-button8.pack()
 
-button9 = tk.Button(frame, text='9', padx=30, pady=10)
-button9.pack()
 
-button0 = tk.Button(frame, text='0')
-button0.pack()
+
 
 
 
 root.mainloop()
-

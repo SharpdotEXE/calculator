@@ -54,8 +54,10 @@ def delete_from_stack():
     print(stack)
 
 def equals():
+    #might add try: except here
     str_stack = ''.join(stack)
     print(eval(str_stack))
+    return str_stack
 
 def append_plus():
     stack.append('+')
@@ -181,34 +183,14 @@ equal_button.pack(side='right')
 
 
 
+display_text = StringVar()
 
 
 
-display = Label(display_frame, text=[i for i in stack], font=('fixedsys', 30), width=20)
+display = Label(display_frame, textvariable=display_text, font=('fixedsys', 30), width=20)
 display.pack()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+display_text.set(''.join(stack))
 
 
 

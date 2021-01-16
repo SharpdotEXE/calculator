@@ -8,62 +8,50 @@ stack = []
 def button_1():
     stack.append('1')
     display_text.set(''.join(stack))
-    print(stack)
 
 def button_2():
     stack.append('2')
     display_text.set(''.join(stack))
-    print(stack)
 
 def button_3():
     stack.append('3')
     display_text.set(''.join(stack))
-    print(stack)
 
 def button_4():
     stack.append('4')
     display_text.set(''.join(stack))
-    print(stack)
 
 def button_5():
     stack.append('5')
     display_text.set(''.join(stack))
-    print(stack)
 
 def button_6():
     stack.append('6')
     display_text.set(''.join(stack))
-    print(stack)
 
 def button_7():
     stack.append('7')
     display_text.set(''.join(stack))
-    print(stack)
 
 def button_8():
     stack.append('8')
     display_text.set(''.join(stack))
-    print(stack)
 
 def button_9():
     stack.append('9')
     display_text.set(''.join(stack))
-    print(stack)
 
 def button_0():
     stack.append('0')
     display_text.set(''.join(stack))
-    print(stack)
 
 def clear_stack():
     del stack[::]
     display_text.set(''.join(stack))
-    print(stack)
 
 def delete_from_stack():
     del stack[-1]
     display_text.set(''.join(stack))
-    print(stack)
 
 def equals():
     #might add try: except here
@@ -75,22 +63,18 @@ def equals():
 def append_plus():
     stack.append('+')
     display_text.set(''.join(stack))
-    print(stack)
 
 def append_subtract():
     stack.append('-')
     display_text.set(''.join(stack))
-    print(stack)
 
 def append_multiply():
     stack.append('*')
     display_text.set(''.join(stack))
-    print(stack)
 
 def append_divide():
     stack.append('/')
     display_text.set(''.join(stack))
-    print(stack)
 
 
 
@@ -206,10 +190,6 @@ display_text = StringVar()
 
 display = Label(display_frame, textvariable=display_text, font=('fixedsys', 30), width=20)
 display.pack()
-
-display_text.set(''.join(stack))
-
-
 
 
 root.mainloop()

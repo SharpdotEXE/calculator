@@ -76,6 +76,15 @@ def append_divide():
     stack.append('/')
     display_text.set(''.join(stack))
 
+def decimal():
+    stack.append('.')
+    display_text.set(''.join(stack))
+
+def square():
+    #needs work
+    stack.append('**(2)')
+    display_text.set(''.join(stack))
+
 
 
 
@@ -180,6 +189,18 @@ equal_button = Button(zero_equal_frame, text='=', padx=30, pady=10,
                         font=('fixedsys', 10), command=equals)
 
 equal_button.pack(side='right')
+
+decimal_button = Button(clear_del_frame, text='.', padx=30, pady=10,
+                        font=('fixedsys', 10), command=decimal)
+
+decimal_button.pack()
+
+square_button = Button(clear_del_frame, text='^2', padx=30, pady=10,
+                        font=('fixedsys', 10), command=square)
+
+square_button.pack()
+
+
 ################buttons#################
 
 

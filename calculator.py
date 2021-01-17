@@ -23,7 +23,6 @@ def delete_from_stack():
 def equals():
     #might add try: except here
     str_stack = ''.join(stack)
-    print(eval(str_stack))
     display_text.set(eval(''.join(stack)))
     
 
@@ -137,7 +136,7 @@ divide_button = tk.Button(operator_frame, text='/', padx=30, pady=10,
                         font=('fixedsys', 10), command=lambda: append_to_stack('/'))
 divide_button.pack()
 
-zero_button = tk.Button(zero_equal_frame, text='0', padx=30, pady=10,
+zero_button = tk.Button(one_4_7_frame, text='0', padx=30, pady=10,
                         font=('fixedsys', 10), command=lambda: append_to_stack('0'))
 
 zero_button.pack(side='left')
@@ -147,15 +146,25 @@ equal_button = tk.Button(zero_equal_frame, text='=', padx=30, pady=10,
 
 equal_button.pack(side='right')
 
-decimal_button = tk.Button(zero_equal_frame, text='.', padx=34, pady=10,
+decimal_button = tk.Button(two_5_8_frame, text='.', padx=30, pady=10,
                         font=('fixedsys', 10), command=lambda: append_to_stack('.'))
 
 decimal_button.pack()
 
-square_button = tk.Button(zero_equal_frame, text='^2', padx=30, pady=10,
+square_button = tk.Button(three_6_9_frame, text='^2', padx=26, pady=10,
                         font=('fixedsys', 10), command=lambda: append_to_stack('**2'))
 
 square_button.pack()
+
+open_parenthesis_button = tk.Button(zero_equal_frame, text='(', padx=30, pady=10,
+                        font=('fixedsys', 10), command=lambda: append_to_stack('('))
+
+open_parenthesis_button.pack()
+
+close_parenthesis_button = tk.Button(zero_equal_frame, text=')', padx=30, pady=10,
+                        font=('fixedsys', 10), command=lambda: append_to_stack(')'))
+
+close_parenthesis_button.pack()
 
 on_button = tk.Button(on_off_frame, text='on', padx=34, pady=10,
                         font=('fixedsys', 10), command=on)

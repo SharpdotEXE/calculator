@@ -270,6 +270,6 @@ dark_mode_button.pack()
 
 ################buttons#################
 
-light_mode()
+dark_mode()
 
 root.mainloop()

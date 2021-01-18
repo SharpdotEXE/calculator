@@ -3,7 +3,6 @@ import tkinter as tk
 
 root = tk.Tk()
 root.title('Greg\'s Calculator')
-root.config(bg='#414241')
 
 stack = []
 
@@ -271,42 +270,6 @@ dark_mode_button.pack()
 
 ################buttons#################
 
-root.config(bg='gray')
-display.config(bg='#183321', fg='#33f273')
-clearbutton.config(bg='white', fg='black')
-delbutton.config(bg='white', fg='black')
-number1_button.config(bg='white', fg='black')
-number4_button.config(bg='white', fg='black')
-number7_button.config(bg='white', fg='black')
-number2_button.config(bg='white', fg='black')
-number5_button.config(bg='white', fg='black')
-number8_button.config(bg='white', fg='black')
-number3_button.config(bg='white', fg='black')
-number6_button.config(bg='white', fg='black')
-number9_button.config(bg='white', fg='black')
-number0_button.config(bg='white', fg='black')
-plus_button.config(bg='white', fg='black')
-minus_button.config(bg='white', fg='black')
-multiply_button.config(bg='white', fg='black')
-divide_button.config(bg='white', fg='black')
-equal_button.config(bg='white', fg='black')
-decimal_button.config(bg='white', fg='black')
-square_button.config(bg='white', fg='black')
-open_parenthesis_button.config(bg='white', fg='black')
-close_parenthesis_button.config(bg='white', fg='black')
-set_button.config(bg='white', fg='#2a362e')
-light_mode_button.config(bg='black', fg='#33f273')
-dark_mode_button.config(bg='white', fg='black')
-
-
-display_frame.config(bg='gray')
-clear_del_set_frame.config(bg='gray')
-one_4_7_frame.config(bg='gray')
-two_5_8_frame.config(bg='gray')
-three_6_9_frame.config(bg='gray')
-operator_frame.config(bg='gray')
-on_off_frame.config(bg='gray')
-equal_parentheses_frame.config(bg='gray')
-
+light_mode()
 
 root.mainloop()

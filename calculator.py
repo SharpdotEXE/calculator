@@ -26,13 +26,13 @@ def delete_from_stack():
 def equals():
     # might add try: except here
     str_stack = ''.join(stack)
-    display_text.set(eval(''.join(stack)))
-    return stack
+    display_text.set(eval(str_stack))
 
 
 def set():
     #needs work
-    stack = equals()
+    stack = eval(''.join(stack))
+    display_text.set(eval(''.join(stack)))
 
 
 def light_mode():

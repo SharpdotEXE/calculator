@@ -29,9 +29,9 @@ def equals():
 
 
 def set():
-    #needs work
-    stack = eval(''.join(stack))
-    display_text.set(eval(''.join(stack)))
+    # needs work
+    global stack
+    stack = [str(eval(''.join(stack)))]
 
 
 def light_mode():
@@ -167,7 +167,7 @@ delbutton = tk.Button(clear_del_set_frame, text='Del', padx=30, pady=10,
 delbutton.pack(side='right')
 
 set_button = tk.Button(clear_del_set_frame, text='Set', padx=22, pady=10,
-                       font=('fixedsys', 10), state='disabled', command=set)
+                       font=('fixedsys', 10), command=set)
 
 set_button.pack()
 

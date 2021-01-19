@@ -29,7 +29,6 @@ def equals():
 
 
 def set():
-    # needs work
     global stack
     stack = [str(eval(''.join(stack)))]
 
